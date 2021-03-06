@@ -1,0 +1,16 @@
+html {
+    font-size: $global-font-size;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: $global-font-family;
+    color: $black;
+}
+
+// input {
+//     @include font(rem(18px), 400);
+
+//     font-family: $global-font-family;
+//     border-radius: 0; /* IE & Safari compatibility */
+// }

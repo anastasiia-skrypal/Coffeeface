@@ -1,0 +1,60 @@
+@mixin respond-to($media) {
+    // from 0 to 375
+    @if $media == mobile {
+        @media screen and (max-width: $tablet - 1) {
+            @content;
+        }
+    }
+    // from 375 to 1440
+    @if $media == tablet {
+        @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+            @content;
+        }
+    }
+    // from 1440
+    @if $media == desktop {
+        @media screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+}
+
+
+@mixin font($weight: 400, $line-height: normal, $size: $global-font-size, $style: normal) {
+    font-size: $size;
+    font-weight: $weight;
+    font-style: $style;
+    line-height: $line-height;
+}
+
+
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+}
+
+
+@mixin align($vertical:top, $display: inline-block) {
+    display: $display;
+    vertical-align: $vertical;
+}
+
+
+@mixin site-width($width: $global-site-width) {
+    margin: 0 auto;
+    max-width: $width;
+
+    @include respond-to(mobiles) {
+        padding-left: $global-mobile-padding;
+        padding-right: $global-mobile-padding;
+    }
+
+    @include respond-to(tablet) {
+        padding-left: $global-tablet-padding;
+        padding-right: $global-tablet-padding;
+    }
+}
+

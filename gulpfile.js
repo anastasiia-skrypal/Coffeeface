@@ -23,4 +23,5 @@ gulp.task("reload", function(done) {
 
 gulp.task("watch", function() {
 	gulp.watch("scss/**/*.scss", gulp.series("sass", "reload"))
+	gulp.watch("./**/*.html", gulp.series("reload"))
 })

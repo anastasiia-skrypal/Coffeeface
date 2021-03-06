@@ -1,0 +1,38 @@
+.header {
+
+
+	&_info {
+		background-color: $black;
+	}
+
+	&_article {
+		color: $white;
+		text-align: center;
+		font-size: 0.75rem;
+		line-height: 38px;
+
+		@include site_width;
+	}
+
+	&_wrapper {
+		background: linear-gradient(101.72deg, $pink_01 4.77%, 
+			$pink_02 28.36%, $pink_03 88.9%, $pink_04 101.84%);
+	}
+
+	&_inner {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 38px;
+
+		@include site_width;
+	}
+
+	&_nav {
+		display: flex;
+		justify-content: space-between;
+		width: 660px;
+
+
+		@include font(400, 1.5rem, 1rem);
+	}
+}

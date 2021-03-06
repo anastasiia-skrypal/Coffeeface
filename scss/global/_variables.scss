@@ -1,0 +1,22 @@
+// Globals
+$global-font-size: 0.625rem;
+$global-font-family: 'Poppins', sans-serif;
+$global-site-width: 1440px;
+$global-mobile-padding: 15px;
+$global-tablet-padding: 20px;
+
+
+// Colors
+$black: #000000;
+$white: #FFFFFF;
+$pink_01: rgba(250, 178, 152, 0.096);
+$pink_02: rgba(244, 222, 214, 0.2);
+$pink_03: rgba(248, 234, 229, 0.2);
+$pink_04: rgba(255, 255, 255, 0);
+
+
+
+// Media 
+$mobile: 375px;
+$tablet: 768px;
+$desktop: $global-site-width;
