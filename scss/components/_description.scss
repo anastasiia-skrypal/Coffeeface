@@ -1,0 +1,34 @@
+.description {
+
+	background-color: $black;
+	text-align: center;
+
+	&_inner {
+		padding: 193px 0 131px 172px;
+		position: relative;
+		
+		@include site_width;
+	}
+
+	&_subtitle {
+		color: $white;
+		width: 330px;
+		height:111px;
+
+		@include font(300, 1.9rem, 1.375rem);
+	}
+
+	&_image {
+		background: url(../images/description.png) center no-repeat;
+		background-size: 100% 100%;
+		font-size: 0;
+		height: 650px;
+		width: 538px;
+		position: absolute;
+		top: 50%;
+		right: 7%;
+		transform: translate(-7%, -50%);
+
+		
+	}
+}
