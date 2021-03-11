@@ -46,5 +46,5 @@ gulp.task('iconfont', function(){
 gulp.task("watch", function() {
 	gulp.watch("scss/**/*.scss", gulp.series("sass", "reload"))
 	gulp.watch("./**/*.html", gulp.series("reload"))
-	gulp.watch('./images/icons/*.svg', gulp.series('iconfont'))
+	// gulp.watch('./images/icons/*.svg', gulp.series('iconfont'))
 })

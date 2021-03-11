@@ -5,8 +5,12 @@
 	}
 
 	&_info {
-		@include site_width;
 		background-color: $black;
+
+		@include site_width;
+		@include respond-to(mobile) {
+			
+		}
 	}
 
 	&_article {
@@ -29,6 +33,10 @@
 		justify-content: space-between;
 		padding: 38px 10px 0 60px;
 
+		@include respond-to(mobile) {
+			padding: 15px;
+		}
+
 		
 	}
 
@@ -39,6 +47,15 @@
 		width: 660px;
 
 		@include font(400, 1.5rem, 1.35rem);
+		@include respond-to(mobile) {
+			display: none;
+		}
+	}
+
+	&_link:hover {
+		color: $brown01;
+		border-bottom: 1px solid $brown01;
+		padding-bottom: 10px;
 	}
 
 }
@@ -54,10 +71,23 @@
 	height: 20px;
 	width: 180px;
 	background: url(../images/coffee-face-logo.png) center no-repeat;
+	background-size: 100% 100%;
+
+	@include respond-to(mobile) {
+		height: 10px;
+		width: 100px;
+	}
 
 	&_link {
 		font-size: 0px;
 		height: 100%;
 		width: 100%;
+	}
+}
+.nav, .search {
+	display: none;
+
+	@include respond-to(mobile) {
+		display: block;
 	}
 }

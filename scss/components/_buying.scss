@@ -24,7 +24,19 @@
 	&_reviews {
 		margin-top: 41px;
 		width:	440px;
-		@include font(300, 1.875rem, 1.35rem);
+		@include font(300, 1.875rem, 1.55rem);
+
+		&::after {
+			display: inline-block;
+			content: "";
+			height: 15px;
+			width: 110px;
+			background: url(../images/star01.png) 10% no-repeat, 
+			url(../images/star01.png) 30% no-repeat, 
+			url(../images/star01.png) 50% no-repeat, 
+			url(../images/star01.png) 70% no-repeat, 
+			url(../images/star02.png) 90% no-repeat;
+		}
 	}
 
 	&_article {

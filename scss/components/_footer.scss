@@ -2,11 +2,27 @@
 
 	&_wrapper {
 		background-color: $black;
-		color: $white;
 		padding: 42px 60px 21px;
+		color: $white;
+		position: relative;
+		overflow: hidden;
 
 		@include font(400, 3.15rem, 1.25rem);
 		@include site_width;
+
+		&::before {
+			display: block;
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			height: 810px;
+			width: 880px;
+			transform: translate(-34%, -55%) rotate(295deg);
+			background: url(../images/buying01.png) left no-repeat;
+			background-size: 100% 100%;
+			opacity: 0.05;
+		}
 	}
 
 	&_inner {
@@ -24,15 +40,56 @@
 	&_item {
 		width: 285px;
 		margin-left: 55px;
+
+		&:hover {
+			color: $brown01;
+		}
 	}
 
 	.payments {
 		display: flex;
 		justify-content: flex-end;
-		padding: 18px 0;
+		padding: 33px 0;
 
 		&_span {
 			font-size: 0;
+		}
+
+		&_link {
+			display: block;
+			margin-left: 16px;
+			height: 22px;
+			width: 32px;
+			border-radius: 5% 5%;
+
+			&:hover {
+				border: 1px solid $brown01;
+				outline-offset: -1px;
+			}
+		}
+		.amex {
+			background: url(../images/amex.png) center no-repeat;
+			background-size: 100% 100%;
+		}
+		.diners {
+			background: url(../images/diners.png) center no-repeat;
+			background-size: 100% 100%;
+		}
+		.discover {
+			background: url(../images/discover.png) center no-repeat;
+			background-size: 100% 100%;
+		}
+		.jcb {
+			background: url(../images/jcb.png) center no-repeat;
+			background-size: 100% 100%;
+		}
+		.visa {
+			background: url(../images/visa.png) center no-repeat;
+			background-size: 100% 100%;
+		}
+		.mastercard {
+			background: url(../images/mastercard.png) center no-repeat;
+			background-size: 100% 100%;
 		}
 	}
 
@@ -42,6 +99,9 @@
 		color: $white;
 		opacity: 40%;
 		border-top: 1px solid $white;
+		font-size: 1rem;
+		letter-spacing: -0.04rem;
+		padding: 7px 0;
 	}
 }
 
@@ -52,7 +112,11 @@
 		width: 160px;
 	}
 
-	&_link {
+	&_link:hover {
+		color: $brown01;
+	}
+
+	&_span {
 		font-size: 0;
 	}
 }

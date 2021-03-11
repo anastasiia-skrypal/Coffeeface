@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html> 
 <head>
 	<title>Coffeeface</title>
 	<meta charset="UTF-8">
@@ -18,29 +18,31 @@
 		</div>
 		<div class="header_wrapper">
 			<div class="header_inner">
+				<div class="nav">Menu</div>
 				<div class="logo">
 					<a href="" class="logo_link">logo</a>
 				</div>
 				<ul class="header_nav">
 					<li class="header_item">
-						<a href="">Home</a>
+						<a href="" class="header_link active">Home</a>
 					</li>
 					<li class="header_item">
-						<a href="">Shop</a>
+						<a href="" class="header_link">Shop</a>
 					</li>
 					<li class="header_item">
-						<a href="">About</a>
+						<a href="" class="header_link">About</a>
 					</li>
 					<li class="header_item">
-						<a href="">What is Cofeeface</a>
+						<a href="" class="header_link">What is Cofeeface</a>
 					</li>
 					<li class="header_item">
-						<a href="">Contact</a>
+						<a href="" class="header_link">Contact</a>
 					</li>
 				</ul>
-			<div class="header_cart">
-				<a href="" class="cart_link shopping_bag"><span class="cart_span">cart</span></a>
-			</div>
+				<div class="search">search</div>	
+				<div class="header_cart">
+					<a href="" class="cart_link shopping_bag"><span class="cart_span">cart</span></a>
+				</div>
 			</div>
 			<div class="banner">
 				<div class="banner_inner">
@@ -107,20 +109,24 @@
 
 	<div class="testimonials">
 		<div class="testimonials_inner">
-			<div class="button_previous"></div>
-			<div class="button_next"></div>
 			<h2 class="testimonials_title">Testimonials</h2>
 			<ul class="testimonials_list">
 				<li class="testimonials_item">
 					<h5 class="testimonials_author">Anna K.</h5>
+					<a href="" class="button_previous">prev</a>
+					<a href="" class="button_next">next</a>
+					<p class="testimonials_article">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
+				</li>
+				<li class="testimonials_item active">
+					<h5 class="testimonials_author">Anna K.</h5>
+					<a href="" class="button_previous">prev</a>
+					<a href="" class="button_next">next</a>
 					<p class="testimonials_article">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
 				</li>
 				<li class="testimonials_item">
 					<h5 class="testimonials_author">Anna K.</h5>
-					<p class="testimonials_article">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
-				</li>
-				<li class="testimonials_item">
-					<h5 class="testimonials_author">Anna K.</h5>
+					<a href="" class="button_previous">prev</a>
+					<a href="" class="button_next">next</a>
 					<p class="testimonials_article">The passage experienced a surge in popularity during the 1960s when Letraset used it on their dry-transfer sheets, and again during the 90s as desktop publishers bundled the text with their software. Today it's seen all around the web; on templates, websites, and stock designs. Use our generator to get your own, or read on for the authoritative history of lorem ipsum.</p>
 				</li>
 			</ul>
@@ -160,8 +166,8 @@
 		<div class="subscription_inner">
 			<h2 class="subscription_title">Subscribe to coffeeface emails</h2>
 			<p class="subscription_article">Subscribe to our coffeeface emails and get exclusive first access to new products, free surveys, free education and beauty tips, and live & virtual events. Unsubscribe anytime. For more information, see our privacy policy.</p>
-			<form class="subscription_form">
-				<input type="text" name="mail" value="Your email" class="subscription_input">
+			<form class="subscription_form" method="POST" action="/subscribe.php">
+				<input type="text" name="mail" placeholder="Your email" class="subscription_input">
 				<input type="submit" name="Subscribe" value="Subscribe"  class="subscription_button">
 			</form>
 		</div>	
@@ -214,14 +220,14 @@
 					</li>
 				</ul>
 				<ul class="social_list">
-					<li class="social_item facebook">
-						<a href="" class="social_link"><span class="social_span">facebook</span></a>
+					<li class="social_item">
+						<a href="" class="social_link facebook"><span class="social_span">facebook</span></a>
 					</li>
-					<li class="social_item twitter">
-						<a href="" class="social_link"><span class="social_span">twit</span></a>
+					<li class="social_item">
+						<a href="" class="social_link twitter"><span class="social_span">twit</span></a>
 					</li>
-					<li class="social_item insta">
-						<a href="" class="social_link"><span class="social_span">insta</span></a>
+					<li class="social_item">
+						<a href="" class="social_link insta"><span class="social_span">insta</span></a>
 					</li>
 				</ul>
 			</div>
