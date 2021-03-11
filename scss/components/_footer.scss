@@ -5,7 +5,7 @@
 		color: $white;
 		padding: 42px 60px 21px;
 
-		@include font(400, 2.375rem, 1rem);
+		@include font(400, 3.15rem, 1.25rem);
 		@include site_width;
 	}
 
@@ -18,17 +18,22 @@
 		display: flex;
 		flex-direction: column;
 		flex-wrap: wrap;
-		height: 100px;
-		width: 270px;
+		height: 120px;
 	}
 
 	&_item {
-		margin-left: 100px;
+		width: 285px;
+		margin-left: 55px;
 	}
 
 	.payments {
 		display: flex;
 		justify-content: flex-end;
+		padding: 18px 0;
+
+		&_span {
+			font-size: 0;
+		}
 	}
 
 	.copyright {
@@ -37,5 +42,17 @@
 		color: $white;
 		opacity: 40%;
 		border-top: 1px solid $white;
+	}
+}
+
+.social {
+	&_list {
+		display: flex;
+		justify-content: space-between;
+		width: 160px;
+	}
+
+	&_link {
+		font-size: 0;
 	}
 }

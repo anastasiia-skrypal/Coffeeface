@@ -1,7 +1,7 @@
 .using {
 	
 	&_inner {
-		padding: 131px 190px 130px 195px;
+		padding: 131px 190px 175px 195px;
 		background-color: $pink_06;
 		text-align: center;
 		position: relative;
@@ -29,17 +29,18 @@
 	&_list {
 		display: flex;
 		justify-content: space-between;
-		margin-top: 57px;
+		margin: 57px 22px 0;
 	}
 
 	&_item {
-	
+
 	}
 
 	.item_text {
-		display: inline-block;
+		display: block;
 		width: 170px;
 		color: $black;
+		margin: 15px 0 0 -25px;
 		@include font(400, 1rem, 1.6rem);
 	}
 }

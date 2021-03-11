@@ -399,7 +399,7 @@ button {
   line-height: 5.9rem; }
 
 .using_inner {
-  padding: 131px 190px 130px 195px;
+  padding: 131px 190px 175px 195px;
   background-color: rgba(252, 209, 194, 0.2);
   text-align: center;
   position: relative;
@@ -437,12 +437,13 @@ button {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 57px; }
+  margin: 57px 22px 0; }
 
 .using .item_text {
-  display: inline-block;
+  display: block;
   width: 170px;
   color: black;
+  margin: 15px 0 0 -25px;
   font-size: 1.6rem;
   font-weight: 400;
   font-style: normal;
@@ -682,7 +683,7 @@ button {
   color: white; }
 
 .instagram_inner {
-  padding: 115px 0 52px;
+  padding: 115px 0 45px;
   text-align: center;
   margin: 0 auto;
   max-width: 1440px; }
@@ -743,6 +744,7 @@ button {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
+  letter-spacing: 0.011rem;
   font-size: 1.1rem;
   font-weight: 300;
   font-style: normal;
@@ -751,16 +753,22 @@ button {
 .instagram_link {
   height: 20px;
   width: 20px;
-  background: url(../images/insta03.png) center no-repeat; }
+  padding-right: 30px; }
+
+.instagram_span {
+  font-size: 0; }
+
+.instagram .insta {
+  font-size: 1.15rem; }
 
 .footer_wrapper {
   background-color: black;
   color: white;
   padding: 42px 60px 21px;
-  font-size: 1rem;
+  font-size: 1.25rem;
   font-weight: 400;
   font-style: normal;
-  line-height: 2.375rem;
+  line-height: 3.15rem;
   margin: 0 auto;
   max-width: 1440px; }
   @media screen and (min-width: 768px) and (max-width: 1439px) {
@@ -791,11 +799,11 @@ button {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
-  height: 100px;
-  width: 270px; }
+  height: 120px; }
 
 .footer_item {
-  margin-left: 100px; }
+  width: 285px;
+  margin-left: 55px; }
 
 .footer .payments {
   display: -webkit-box;
@@ -805,7 +813,10 @@ button {
   -webkit-box-pack: end;
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
-          justify-content: flex-end; }
+          justify-content: flex-end;
+  padding: 18px 0; }
+  .footer .payments_span {
+    font-size: 0; }
 
 .footer .copyright {
   display: -webkit-box;
@@ -819,3 +830,17 @@ button {
   color: white;
   opacity: 40%;
   border-top: 1px solid white; }
+
+.social_list {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 160px; }
+
+.social_link {
+  font-size: 0; }
