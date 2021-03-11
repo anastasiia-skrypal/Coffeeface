@@ -1,0 +1,66 @@
+.instagram {
+
+	&_inner {
+		padding: 115px 0 52px;
+		text-align: center;
+	
+		@include site_width;
+	}
+	
+	&_title {
+		text-transform: uppercase;
+		letter-spacing: -0.08rem;
+		@include font(200, 2.1rem, 3.3rem);
+	}
+
+	&_slider {
+		display: flex;
+		justify-content: space-between;
+		font-size: 0;
+		padding: 75px 48px 0 60px;
+	}
+
+	&_item {
+		height: 216px;
+		width: 211px;
+
+		&:nth-child(1n+1)::before  {
+			display: block;
+			content: "";
+			height: 216px;
+			width: 211px;
+			background: url(../images/insta01.png) center no-repeat;
+		}
+
+		&:nth-child(2n+2)::before  {
+			display: block;
+			content: "";
+			height: 216px;
+			width: 211px;
+			background: url(../images/insta02.png) center no-repeat;
+		}
+
+		&:nth-child(3n+3)::before  {
+			display: block;
+			content: "";
+			height: 216px;
+			width: 211px;
+			background: url(../images/insta03.png) center no-repeat;
+		}	
+	}
+
+	&_follow {
+		margin-top: 75px;
+		display: flex;
+		justify-content:center;
+
+		@include font(300, 1.098rem, 1.1rem);
+	}
+
+	&_link {
+		height: 20px;
+		width: 20px;
+		background: url(../images/insta03.png) center no-repeat;
+
+	}
+}

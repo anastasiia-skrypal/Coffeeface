@@ -1,0 +1,69 @@
+.blog {
+
+	&_inner {
+	position: relative;
+		text-align: center;
+		height: 700px;
+		background: $black url(../images/icons/Group.png) 95% -20% no-repeat;
+
+		@include site_width;
+
+		&::after {
+			display: block;
+			content: "";
+			position: absolute;
+			top: -60%;
+			left: 50%;
+			height: 416px;
+			width: 874px;
+			background: url(../images/aloe.png) center no-repeat;
+			transform: translate(-50%, 60%);
+		}
+	}	
+
+	&_title {
+	padding-top: 355px;
+		color: $white;
+		@include font(200, 3.75rem, 3.3rem);
+	}
+
+	&_list {
+		display: flex;
+		justify-content: space-between;
+		margin: 60px 46px 0 76px;
+	}
+
+	&_item {
+		// padding-top: 55px;
+		width: 424px;
+
+		&:nth-child(1)::before  {
+			display: block;
+			content: "";
+			height: 300px;
+			width: 427px;
+			background: url(../images/blog01.png) center no-repeat;
+		}
+		&:nth-child(2)::before {
+			display: block;
+			content: "";
+			height: 300px;
+			width: 427px;
+			background: url(../images/blog02.png) center no-repeat;
+		}
+		&:nth-child(3)::before  {
+			display: block;
+			content: "";
+			height: 300px;
+			width: 427px;
+			background: url(../images/blog03.png) center no-repeat;
+		}
+	}
+
+	&_article {
+		margin-top: 25px;
+		text-align: left;
+		letter-spacing: -0.01rem;
+		@include font(400, 2.15rem, 1.45rem);
+	}
+}

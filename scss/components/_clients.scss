@@ -1,0 +1,39 @@
+.clients {
+	&_inner {
+		padding: 265px 83px 129px 42px;
+		@include site_width;
+	}
+
+	&_list {
+		display: flex;
+		justify-content: space-around;
+		font-size: 0;
+		height: 50px;
+
+	}
+
+	&_item {
+		height: 50px;
+		width: 200px;
+		background-size: 100% 100%;
+	}
+
+	.vogue {
+		background: url(../images/vogue.png) center no-repeat;
+	}
+
+	.byrdie {
+		background: url(../images/byrdie.png) center no-repeat;
+	}
+	.vanity_fair {
+		background: url(../images/vanityfair.png) center no-repeat;
+	}
+
+	.wwd {
+		background: url(../images/wwd.png) center no-repeat;
+	}
+
+	.marie_claire {
+		background: url(../images/marieclaire.png) center no-repeat;
+	}
+}

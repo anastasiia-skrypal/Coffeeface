@@ -1,0 +1,60 @@
+.testimonials {
+	&_inner {
+		text-align: center;
+		padding: 100px 0 655px;
+		overflow: hidden;
+		position: relative;
+		@include site_width;
+	}
+
+	&_title {
+		@include font(200, 3.75rem, 3.2rem);
+	}
+
+	&_list {
+		display: flex;
+		justify-content: space-between;
+		position: absolute;
+		margin-top: 55px;
+		top: 20.5%;
+		left: 50%;
+		transform: translate(-50%, -20.5%);
+	}
+
+	&_item {
+		margin: 40px 65px 0px;
+		width: 650px;
+
+		&::before {
+			display: block;
+			content: "";
+			height: 90px;
+			width: auto;
+			background: url(../images/testimon.png) 50% no-repeat;
+		}
+	}
+
+	&_author {
+		margin-top: 10px;
+
+		@include font(500, 2.338rem, 1.8rem);
+	}
+
+	&_article {
+		margin-top: 25px;
+		letter-spacing: -0.03rem;
+
+		@include font(300, 2.5rem, 1.5rem);
+
+	}
+
+	.button {
+		&_previous {
+
+		}
+		&_next {
+
+		}
+	}
+	
+}

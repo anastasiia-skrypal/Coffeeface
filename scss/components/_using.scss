@@ -1,0 +1,45 @@
+.using {
+	
+	&_inner {
+		padding: 131px 190px 130px 195px;
+		background-color: $pink_06;
+		text-align: center;
+		position: relative;
+
+		@include site_width;
+	}
+
+	&_title {
+
+		@include font(200, 3.75rem, 3.2rem);
+
+		&::after {
+			display: block;
+			content: "";
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			height: 200%;
+			width: 100%;
+			background: url(../images/using.png) center no-repeat;
+			transform: translate(-49.8%, -64%);
+		}
+	}
+
+	&_list {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 57px;
+	}
+
+	&_item {
+	
+	}
+
+	.item_text {
+		display: inline-block;
+		width: 170px;
+		color: $black;
+		@include font(400, 1rem, 1.6rem);
+	}
+}

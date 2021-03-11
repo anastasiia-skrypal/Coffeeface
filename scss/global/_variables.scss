@@ -7,13 +7,20 @@ $global-tablet-padding: 20px;
 
 
 // Colors
-$black: #000000;
-$white: #FFFFFF;
+$transparent: rgba(0,0,0,0);
+$black: rgba(0,0,0,1);
+$black_02: rgba(0,0,0,0.5);
+$white: rgb(255,255,255);
 $pink_01: rgba(250, 178, 152, 0.096);
 $pink_02: rgba(244, 222, 214, 0.2);
 $pink_03: rgba(248, 234, 229, 0.2);
 $pink_04: rgba(255, 255, 255, 0);
-$pink_05: #E5E5E5;
+$pink_05: rgb(229, 229, 229);
+$pink_06: rgba(252, 209, 194, 0.2);
+$pink_07: rgba(252, 209, 194, 0.48);
+$pink_08: rgba(252, 209, 194, 0.2841);
+$pink_09: rgba(255, 255, 255, 0);
+$brown01: rgba(138, 81, 55, 1);
 
 
 

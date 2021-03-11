@@ -1,22 +1,23 @@
 .phrases {
 	&_inner {
-		background: url(../images/phrases.png) center no-repeat;
-		padding: 470px 268px 147px;
+		background: url(../images/phrases.png) center no-repeat $pink_06;;
+		padding: 643px 268px 100px;
 		position: relative;
+		background-size: 100% 100%;
 		@include site_width;
 	}
 
 	.article {
 		position: absolute;
 		left: 50%;
-		top: 50%;
-		transform: translate(-50%, -50%);
+		top: 52.3%;
+		transform: translate(-50%, -52.3%);
 	}
 
 	&_item {
 		color: $white;
 		text-align: center;
 	
-		@include font(200, 4.5rem, 3.75rem);
+		@include font(200, 5.9rem, 4.9rem);
 	}
 }
