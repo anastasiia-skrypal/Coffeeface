@@ -1,42 +1,92 @@
 .description {
 
 	&_inner {
-		padding: 140px 0 132px 175px;
-		position: relative;
+		padding: 150px 0 150px 15px;
 		background-color: $black;
 		text-align: center;
+		position: relative;
+		width: 100%;
 		
 		@include site_width;
+		@include respond-to(tablet) {
+			padding: 6% 5% 15%;
+		}
 	}
 
 	&_logo {
-		font-size: 0;
-		height: 28px;
-		width: 420px;
-		background: url(../images/coffee-face-logo.png) center no-repeat;
-		background-size: auto 100%;
+		padding-left: 5vw;
+		height: 10%;
+		width: 35%;
+
+		@include respond-to(mobile) {
+			padding: 100% 5% 0;;
+			text-align: center;
+			width: 100%;
+		}
+		@include respond-to(tablet) {
+			width: 45%;
+			// padding-left: 5vw;
+		}
+	}
+
+	&_link {
+		height: 2vw;
+		width: 12vw;
+		text-align: center;
+
+		@include respond-to(mobile) {
+			height: 13vw;
+			width: 6vw;
+		}
+	}
+
+	&_logo_img {
+		height: 100%;
+		width: 100%;
+		text-align: center;
 	}
 
 	&_subtitle {
 		margin-top: 25px;
 		color: $white;
-		width: 420px;
 		height:111px;
 
 		@include font(300, 3.04rem, 1.75rem);
+		@include respond-to(tablet) {
+			font-size: 2vw;
+		}
+		@include respond-to(mobile) {
+			font-size: 4vw;
+		}
 	}
 
 	&_image {
-		background: url(../images/description.png) center no-repeat;
-		background-size: 100% 100%;
-		font-size: 0;
-		height: 650px;
-		width: 538px;
-		position: absolute;
-		top: 45%;
-		right: 8.62%;
-		transform: translate(-8.62%, -45%);
 
-		
+		height: 130%;
+		width: auto;
+		position: absolute;
+		right: 30px;
+		bottom: -50px;
+
+		@include respond-to(tablet) {
+			height: 120%;
+		}
+		@include respond-to(mobile) {
+			top: -50px;
+			right: 50%;
+			transform: translate(50%, 0);
+			width: 100%;
+		}
+	}
+
+	&_img {
+		height: 100%;
+		width: auto;
+
+		@include respond-to(mobile) {
+			height: auto;
+			width: 90%;
+		}
 	}
 }
+

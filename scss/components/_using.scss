@@ -1,7 +1,7 @@
 .using {
 	
 	&_inner {
-		padding: 131px 190px 175px 195px;
+		padding: 131px 0 165px;
 		background-color: $pink_06;
 		text-align: center;
 		position: relative;
@@ -12,6 +12,10 @@
 	&_title {
 
 		@include font(200, 3.75rem, 3.2rem);
+		@include respond-to(mobile) {
+			padding: 0 100px;
+			@include font(200, 5.75rem, 4.2rem);
+		}
 
 		&::after {
 			display: block;
@@ -28,19 +32,28 @@
 
 	&_list {
 		display: flex;
-		justify-content: space-between;
-		margin: 57px 22px 0;
+		justify-content: space-around;
+		margin-top: 57px;
+
+		@include respond-to(mobile) {
+			flex-direction: column;
+			align-items: center;
+		}
 	}
 
 	&_item {
+		margin: 0 30px;
 
+		@include respond-to(mobile) {
+			margin-top: 60px;
+		}
 	}
 
 	.item_text {
 		display: block;
 		width: 170px;
 		color: $black;
-		margin: 15px 0 0 -25px;
+		margin: 10px 0 0 -25px;
 		@include font(400, 1rem, 1.6rem);
 	}
 }

@@ -1,20 +1,12 @@
 .clients {
 	&_inner {
-		padding: 265px 83px 129px 42px;
+		padding: 50px 60px 100px;
 		@include site_width;
 	}
 
-	&_list {
-		display: flex;
-		justify-content: space-around;
+	&_item {
 		font-size: 0;
 		height: 50px;
-
-	}
-
-	&_item {
-		height: 50px;
-		width: 200px;
 		background-size: 100% 100%;
 	}
 

@@ -1,11 +1,11 @@
 @mixin respond-to($media) {
-    // from 0 to 375
+    // from 375 to 767
     @if $media == mobile {
-        @media screen and (max-width: $tablet - 1) {
+        @media screen and (min-width: $mobile) and (max-width: $tablet - 1) {
             @content;
         }
     }
-    // from 375 to 1440
+    // from 768px to 1439
     @if $media == tablet {
         @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
             @content;
@@ -47,7 +47,7 @@
     margin: 0 auto;
     max-width: $width;
 
-    @include respond-to(mobiles) {
+    @include respond-to(mobile) {
         padding-left: $global-mobile-padding;
         padding-right: $global-mobile-padding;
     }

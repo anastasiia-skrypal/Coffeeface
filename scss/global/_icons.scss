@@ -35,17 +35,20 @@
 	@if $filename == instagram {
 		$char: "\F122";
 	}
-	@if $filename == sand-clock {
+	@if $filename == loupe {
 		$char: "\F123";
 	}
-	@if $filename == shopping-bag {
+	@if $filename == sand-clock {
 		$char: "\F124";
 	}
-	@if $filename == treatment {
+	@if $filename == shopping-bag {
 		$char: "\F125";
 	}
-	@if $filename == twitter {
+	@if $filename == treatment {
 		$char: "\F126";
+	}
+	@if $filename == twitter {
+		$char: "\F127";
 	}
 
 	@return $char;
@@ -61,6 +64,11 @@
 		content: icon-char($filename);
 	}
 }
+.search_icon {
+	@include icon(loupe);
+	color: black;
+	font-size: 20px;
+}
 
 .hand_washing, .sand_clock, .treatment {
 	height: 124px;
@@ -71,6 +79,7 @@
 	color: $brown01;
 	border: 1px solid $brown01;
 	border-radius: 50% 50%;
+	background-color: $white;
 } 
 
 .hand_washing {
@@ -97,3 +106,6 @@
 .twitter {
 	@include icon(twitter);
 }
+
+
+// 

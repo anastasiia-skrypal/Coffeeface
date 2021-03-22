@@ -9,6 +9,9 @@
 
 		@include font(400, 3.15rem, 1.25rem);
 		@include site_width;
+		@include respond-to(mobile) {
+			padding: 10px;
+		}
 
 		&::before {
 			display: block;
@@ -22,12 +25,24 @@
 			background: url(../images/buying01.png) left no-repeat;
 			background-size: 100% 100%;
 			opacity: 0.05;
+
+			@include respond-to(mobile) {
+				transform: translate(14%, -30%) rotate(330deg);
+			}
 		}
 	}
 
 	&_inner {
 		display: flex;
 		justify-content: space-between;
+		position: relative;
+
+		@include respond-to(mobile) {
+			flex-direction: column;
+		}
+		@include respond-to(mobile) {
+			padding: 30px;
+		}
 	}
 
 	&_list {
@@ -35,11 +50,25 @@
 		flex-direction: column;
 		flex-wrap: wrap;
 		height: 120px;
+		width: 30%;
+
+		@include respond-to(mobile) {
+			flex-wrap: nowrap;
+			height: 300px;
+			margin-top: 20px;
+		}
 	}
 
 	&_item {
-		width: 285px;
-		margin-left: 55px;
+		width: 215px;
+		margin-left: 80px;
+
+		@include respond-to(tablet) {
+			margin-left: 10px;
+		}
+		@include respond-to(mobile) {
+			margin: 10px 0 0 10px;
+		}
 
 		&:hover {
 			color: $brown01;
@@ -51,6 +80,15 @@
 		justify-content: flex-end;
 		padding: 33px 0;
 
+		@include respond-to(mobile) {
+			justify-content: space-between;
+			padding: 33px 30px;
+		}
+
+		@include respond-to(mobile) {
+			justify-content: space-between;
+		}
+
 		&_span {
 			font-size: 0;
 		}
@@ -61,6 +99,11 @@
 			height: 22px;
 			width: 32px;
 			border-radius: 5% 5%;
+
+			@include respond-to(mobile) {
+				height: 40px;
+				width: 60px;
+			}
 
 			&:hover {
 				border: 1px solid $brown01;
@@ -102,6 +145,10 @@
 		font-size: 1rem;
 		letter-spacing: -0.04rem;
 		padding: 7px 0;
+
+		@include respond-to(mobile) {
+			font-size: 1.5rem;
+		}
 	}
 }
 
@@ -109,7 +156,15 @@
 	&_list {
 		display: flex;
 		justify-content: space-between;
-		width: 160px;
+		width: 13%;
+
+		@include respond-to(mobile) {
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			width: 25%;
+			font-size: 30px;
+		}
 	}
 
 	&_link:hover {
@@ -119,4 +174,12 @@
 	&_span {
 		font-size: 0;
 	}
+}
+
+.logo {
+	@include respond-to(mobile) {
+		height: 20px;
+		width: 150px;
+		margin-left: 10px;
+	}	
 }
