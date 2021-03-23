@@ -1310,7 +1310,7 @@ button {
   color: rgba(0, 0, 0, 0.5); }
   @media screen and (min-width: 768px) and (max-width: 1439px) {
     .subscription_input {
-      height: 2.3vw;
+      height: 6.5vw;
       width: 30vw; } }
   @media screen and (min-width: 375px) and (max-width: 767px) {
     .subscription_input {
