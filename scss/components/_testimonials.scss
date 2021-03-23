@@ -6,6 +6,8 @@
 		padding: 100px 0 77px;
 		overflow: hidden;
 		position: relative;
+		overflow-x: hidden;
+
 		@include site_width;
 		@include respond-to(mobile) {
 			padding: 14vw 0 13.5vw;
@@ -21,6 +23,7 @@
 
 	.owl-carousel { 
 		margin: 0 auto;
+		overflow-x: hidden;
 	}
 
 	.owl-prev, .owl-next {

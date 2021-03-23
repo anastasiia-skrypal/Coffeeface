@@ -9,6 +9,7 @@
 		position: relative;
 		background: url(../images/buying02.png) -5% 85% no-repeat;
 		background-size: 50%;
+		overflow-x: hidden;
 
 		@include site_width;
 		@include respond-to(tablet) {

@@ -1,4 +1,5 @@
 .banner {
+	overflow-x: hidden;
 	@include site_width;
 
 	&_inner {

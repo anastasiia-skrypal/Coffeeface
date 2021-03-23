@@ -20,6 +20,7 @@
 		position: relative;
 		overflow: hidden;
 		z-index: 1;
+		overflow-x: hidden;
 
 		@include font(400, 3.15rem, 1.25rem);
 		@include site_width;

@@ -5,6 +5,7 @@
 		background-color: $pink_06;
 		text-align: center;
 		position: relative;
+		// overflow-x: hidden;
 
 		@include site_width;
 		@include respond-to(mobile) {

@@ -3,6 +3,7 @@
 	&_inner {
 		padding: 120px 30px 45px;
 		text-align: center;
+		overflow-x: hidden;
 	
 		@include site_width;
 		@include respond-to(tablet) {

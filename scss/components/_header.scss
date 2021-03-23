@@ -6,6 +6,7 @@
 
 	&_info {
 		background-color: $black;
+		overflow-x: hidden;
 
 		@include site_width;
 		@include respond-to(mobile) {
@@ -31,7 +32,7 @@
 		
 		@include site_width;
 		@include respond-to(mobile) {
-			margin: 0 -10px;
+			margin: 0 0;
 		}
 	}
 

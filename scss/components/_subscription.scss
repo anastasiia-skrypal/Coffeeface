@@ -6,6 +6,7 @@
 		background: linear-gradient(90deg, $pink_07 0%, 
 		$pink_08 35%, $pink_09 100%);
 		position: relative;
+		overflow-x: hidden;
 
 		@include site_width;
 		@include respond-to(mobile) {

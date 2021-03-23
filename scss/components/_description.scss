@@ -6,6 +6,7 @@
 		text-align: center;
 		position: relative;
 		width: 100%;
+		// overflow-x: hidden;
 		
 		@include site_width;
 		@include respond-to(tablet) {

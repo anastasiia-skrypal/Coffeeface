@@ -4,6 +4,7 @@
 
 @include respond-to(mobile) {
     .nav {
+        overflow-x: hidden;
 
         &_label {
             display: block;
