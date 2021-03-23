@@ -297,9 +297,8 @@ button {
   background-size: 100% 100%; }
   @media screen and (min-width: 375px) and (max-width: 767px) {
     .logo {
-      background-size: 100% 100%;
-      width: 32vw;
-      height: 3.5vw; } }
+      width: 35vw;
+      height: 5vw; } }
   .logo_link {
     font-size: 0px;
     height: 100%;
@@ -949,12 +948,12 @@ button {
     line-height: 50px; }
     @media screen and (min-width: 375px) and (max-width: 767px) {
       .testimonials .owl-prev, .testimonials .owl-next {
-        top: 18%; } }
+        top: 20vw; } }
   .testimonials .owl-next {
     left: 20%; }
     @media screen and (min-width: 375px) and (max-width: 767px) {
       .testimonials .owl-next {
-        left: 12%; } }
+        left: 12vw; } }
     .testimonials .owl-next::after {
       display: block;
       content: "";
@@ -965,6 +964,10 @@ button {
       left: 0;
       background: url(../images/arrow_prev.png) center no-repeat;
       z-index: 2; }
+      @media screen and (min-width: 375px) and (max-width: 767px) {
+        .testimonials .owl-next::after {
+          background-size: 9vw;
+          height: 8vw; } }
     .testimonials .owl-next::before {
       display: block;
       content: "";
@@ -989,7 +992,7 @@ button {
     right: 20%; }
     @media screen and (min-width: 375px) and (max-width: 767px) {
       .testimonials .owl-prev {
-        right: 12%; } }
+        right: 12vw; } }
     .testimonials .owl-prev::after {
       display: block;
       content: "";
@@ -1000,6 +1003,10 @@ button {
       right: 0;
       background: url(../images/arrow_next.png) center no-repeat;
       z-index: 2; }
+      @media screen and (min-width: 375px) and (max-width: 767px) {
+        .testimonials .owl-prev::after {
+          background-size: 9vw;
+          height: 8vw; } }
     .testimonials .owl-prev::before {
       display: block;
       content: "";
@@ -1017,9 +1024,6 @@ button {
         .testimonials .owl-prev::before {
           height: 8vw;
           width: 8vw; } }
-      .testimonials .owl-prev::before:hover {
-        background: #8a5137 url(../images/arrow_next_accent.png) -160% 56% no-repeat;
-        z-index: 3; }
   .testimonials_item {
     margin: 40px 25px 0px; }
     @media screen and (min-width: 375px) and (max-width: 767px) {

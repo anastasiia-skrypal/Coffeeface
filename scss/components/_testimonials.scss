@@ -34,7 +34,7 @@
 		line-height: 50px;
 
 		@include respond-to(mobile) {
-			top: 18%;
+			top: 20vw;
 		}
 	}
 
@@ -42,7 +42,7 @@
 		left: 20%;
 
 		@include respond-to(mobile) {
-			left: 12%;
+			left: 12vw;
 		}
 
 		&::after {
@@ -55,6 +55,11 @@
 			left: 0;
 			background: url(../images/arrow_prev.png) center no-repeat;
 			z-index: 2;
+
+			@include respond-to(mobile) {
+				background-size: 9vw;
+				height: 8vw;
+			}
 		}
 
 		&::before {
@@ -87,7 +92,7 @@
 		right: 20%;
 
 		@include respond-to(mobile) {
-			right: 12%;
+			right: 12vw;
 		}
 
 		&::after {
@@ -100,6 +105,11 @@
 			right: 0;
 			background: url(../images/arrow_next.png) center no-repeat;
 			z-index: 2;
+
+			@include respond-to(mobile) {
+				background-size: 9vw;
+				height: 8vw;
+			}
 		}
 
 		&::before {
@@ -118,11 +128,6 @@
 			@include respond-to(mobile) {
 				height: 8vw;
 				width: 8vw;
-			}
-
-			&:hover {
-				background: $brown01 url(../images/arrow_next_accent.png) -160% 56% no-repeat;
-				z-index: 3;
 			}
 		}
 	}

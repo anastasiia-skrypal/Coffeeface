@@ -90,9 +90,8 @@
 	background-size: 100% 100%;
 
 	@include respond-to(mobile) {
-		background-size: 100% 100%;
-		width: 32vw;
-		height: 3.5vw;
+		width: 35vw;
+		height: 5vw;
 	}
 
 	&_link {
