@@ -6,11 +6,13 @@
 		text-align: center;
 		position: relative;
 		width: 100%;
-		// overflow-x: hidden;
 		
 		@include site_width;
 		@include respond-to(tablet) {
 			padding: 6% 5% 15%;
+		}
+		@include respond-to(mobile) {
+			width: 100%;
 		}
 	}
 
@@ -79,7 +81,7 @@
 			height: 120%;
 		}
 		@include respond-to(mobile) {
-			top: -85px;
+			top: -50px;
 			right: 50%;
 			transform: translate(50%, 0);
 			width: 100%;

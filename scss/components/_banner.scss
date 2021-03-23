@@ -1,17 +1,17 @@
 .banner {
-	overflow-x: hidden;
-	@include site_width;
 
 	&_inner {
 		flex-direction: column;
 		align-items: flex-end;
 		background: url(../images/banner.png) left bottom no-repeat;
-		background-size: auto 97%;
+		background-size: auto 110%;
 		position: relative;
+		width: 100%;
 
 		@include respond-to(mobile) {
 			background-size: auto 67%;
-			background-position: 30% 0%;
+			background-position: 30% 0%;						
+
 		}
 
 		&::after {

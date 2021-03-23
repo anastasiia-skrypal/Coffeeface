@@ -27,6 +27,8 @@
 
 			@include respond-to(mobile) {
 				height: 250%;
+				width: 110%;
+				left: -5%;
 			}
 		}
 
