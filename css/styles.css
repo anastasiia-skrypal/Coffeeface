@@ -825,7 +825,7 @@ button {
       padding-right: 20px; } }
   @media screen and (min-width: 375px) and (max-width: 767px) {
     .using_inner {
-      height: 176vw; } }
+      height: 200vw; } }
 
 .using_title {
   font-size: 3.2rem;
@@ -1075,6 +1075,7 @@ button {
 .blog_inner {
   text-align: center;
   padding-bottom: 50px;
+  overflow-x: hidden;
   margin: 0 auto;
   max-width: 1440px; }
   @media screen and (min-width: 375px) and (max-width: 767px) {
