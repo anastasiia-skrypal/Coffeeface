@@ -336,7 +336,7 @@ button {
       -ms-flex-align: end;
           align-items: flex-end;
   background: url(../images/banner.png) left bottom no-repeat;
-  background-size: auto 110%;
+  background-size: auto 97%;
   position: relative;
   width: 100%; }
   @media screen and (min-width: 375px) and (max-width: 767px) {
