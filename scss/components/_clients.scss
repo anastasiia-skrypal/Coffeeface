@@ -1,13 +1,21 @@
 .clients {
 	&_inner {
 		padding: 50px 60px 100px;
+		
 		@include site_width;
+		@include respond-to(mobile) {
+			padding: 5vw 2vw 10vw;
+		}
 	}
 
 	&_item {
 		font-size: 0;
 		height: 50px;
 		background-size: 100% 100%;
+
+		@include respond-to(mobile) {
+			height: 12vw;
+		}
 	}
 
 	.vogue {

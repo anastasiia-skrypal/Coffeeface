@@ -67,7 +67,7 @@
 .search_icon {
 	@include icon(loupe);
 	color: black;
-	font-size: 20px;
+	font-size: 28px;
 }
 
 .hand_washing, .sand_clock, .treatment {
@@ -80,6 +80,13 @@
 	border: 1px solid $brown01;
 	border-radius: 50% 50%;
 	background-color: $white;
+
+	@include respond-to(mobile) {
+		width: 23vw;
+		height: 23vw;
+		line-height: 23vw;
+		font-size: 9vw;
+	}	
 } 
 
 .hand_washing {
@@ -93,6 +100,9 @@
 	font-size: 23px;
 
 	@include icon(shopping-bag);
+	@include respond-to(mobile) {
+		font-size: 28px;
+	}
 }
 .treatment {
 	@include icon(treatment);

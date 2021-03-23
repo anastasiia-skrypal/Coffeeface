@@ -8,6 +8,9 @@
 		background-color: $black;
 
 		@include site_width;
+		@include respond-to(mobile) {
+			padding: 1.5vw 4.5vw 1.5vw;
+		}
 	}
 
 	&_article {
@@ -16,13 +19,20 @@
 		font-size: 0.95rem;
 		line-height: 38px;
 		background-color: $black;
+		
+		@include respond-to(mobile) {
+			font-size: 2.5vw;
+		}
 	}
 
 	&_wrapper {
 		background: linear-gradient(101.72deg, $pink_01 4.77%, 
 			$pink_02 28.36%, $pink_03 88.9%, $pink_04 101.84%);
-
+		
 		@include site_width;
+		@include respond-to(mobile) {
+			margin: 0 -10px;
+		}
 	}
 
 	&_inner {
@@ -34,7 +44,7 @@
 			padding: 30px 10px 0;
 		}
 		@include respond-to(mobile) {
-			padding: 20px 20px 0;
+			padding: 3vw 4.3vw 0;
 		}
 	}
 
@@ -46,7 +56,7 @@
 
 		@include font(400, 1.5rem, 1.35rem);
 		@include respond-to(tablet) {
-			width: 400px;
+			width: 660px;
 		}
 		@include respond-to(mobile) {
 			display: none;
@@ -61,6 +71,7 @@
 
 	&_cart {
 		margin-left: 20px;
+		display: inline-block;
 	}
 
 }
@@ -79,18 +90,15 @@
 	background-size: 100% 100%;
 
 	@include respond-to(mobile) {
-		height: 10px;
-		width: 100px;
+		background-size: 100% 100%;
+		width: 32vw;
+		height: 3.5vw;
 	}
 
 	&_link {
 		font-size: 0px;
 		height: 100%;
-		width: 100%;
-
-		@include respond-to(mobile) {
-			
-		}
+		width: 100%;	
 	}
 }
 .nav, .search {
@@ -108,6 +116,6 @@
 
 .header_btn {
 	display: flex;
-	width: 50px;
-	height: 50px;
+	width: 70px;
+	height: 70px;
 }

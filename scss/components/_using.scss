@@ -7,14 +7,17 @@
 		position: relative;
 
 		@include site_width;
+		@include respond-to(mobile) {
+			height: 176vw;
+		}
 	}
 
 	&_title {
 
 		@include font(200, 3.75rem, 3.2rem);
 		@include respond-to(mobile) {
-			padding: 0 100px;
-			@include font(200, 5.75rem, 4.2rem);
+			padding: 0 8vw;
+			@include font(200, 10vw, 8vw);
 		}
 
 		&::after {
@@ -27,6 +30,10 @@
 			width: 100%;
 			background: url(../images/using.png) center no-repeat;
 			transform: translate(-49.8%, -64%);
+
+			@include respond-to(mobile) {
+				transform: translate(-49.8%, -68%);
+			}
 		}
 	}
 
@@ -38,6 +45,7 @@
 		@include respond-to(mobile) {
 			flex-direction: column;
 			align-items: center;
+			margin-top: 0;
 		}
 	}
 
@@ -45,7 +53,7 @@
 		margin: 0 30px;
 
 		@include respond-to(mobile) {
-			margin-top: 60px;
+			margin-top: 15vw;
 		}
 	}
 
@@ -55,5 +63,10 @@
 		color: $black;
 		margin: 10px 0 0 -25px;
 		@include font(400, 1rem, 1.6rem);
+		@include respond-to(mobile) {
+			width: 36vw;
+			margin-left: -7vw;
+			@include font(400, 8vw, 4.2vw);
+		}
 	}
 }

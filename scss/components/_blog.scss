@@ -2,10 +2,12 @@
 
 	&_inner {
 		text-align: center;
-
 		padding-bottom: 50px;
 
 		@include site_width;
+		@include respond-to(mobile) {
+				padding-bottom: 1vw;
+			}
 	}	
 
 	&_image {
@@ -21,6 +23,10 @@
 			height: 130%;
 			background-color: $black;
 			z-index:-2;
+
+			@include respond-to(mobile) {
+				height: 250%;
+			}
 		}
 
 		&::before {
@@ -38,11 +44,11 @@
 			z-index:-1;
 
 			@include respond-to(mobile) {
-				top: 30%;
-				right: -35%;
-				width: 90vw;
-				height: 75vw;
-				transform: rotate(90deg);
+				top: 10%;
+				right: -55%;
+				width: 120vw;
+				height: 105vw;
+				transform: rotate(55deg);
 			}
 			
 		}
@@ -63,6 +69,10 @@
 		color: $white;
 		
 		@include font(200, 3.75rem, 3.3rem);
+		@include respond-to(mobile) {
+			margin-top: 17vw;
+			@include font(200, 8vw, 8vw);
+		}
 	}
 
 	&_item_image {
@@ -75,5 +85,10 @@
 		letter-spacing: -0.01rem;
 		
 		@include font(400, 2.15rem, 1.45rem);
+		@include respond-to(mobile) {
+			margin: 1vw 4vw 0 4vw;
+			letter-spacing: 0.1vw;
+			@include font(400, 6vw, 3.5vw);
+		}
 	}
 }

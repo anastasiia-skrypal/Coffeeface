@@ -7,10 +7,16 @@
 		overflow: hidden;
 		position: relative;
 		@include site_width;
+		@include respond-to(mobile) {
+			padding: 14vw 0 13.5vw;
+		}
 	}
 
 	&_title {
 		@include font(200, 3.75rem, 3.2rem);
+		@include respond-to(mobile) {
+			@include font(200, 8vw, 8vw);
+		}
 	}
 
 	.owl-carousel { 
@@ -26,10 +32,18 @@
 		height: 45px;
 		width: 45px;
 		line-height: 50px;
+
+		@include respond-to(mobile) {
+			top: 18%;
+		}
 	}
 
 	.owl-next {
 		left: 20%;
+
+		@include respond-to(mobile) {
+			left: 12%;
+		}
 
 		&::after {
 			display: block;
@@ -56,6 +70,11 @@
 			border-radius: 50% 50%;
 			z-index: 2;
 
+			@include respond-to(mobile) {
+				height: 8vw;
+				width: 8vw;
+			}
+
 			&:hover {
 				background-color: $brown01;
 				z-index: 2;
@@ -66,6 +85,10 @@
 
 	.owl-prev {
 		right: 20%;
+
+		@include respond-to(mobile) {
+			right: 12%;
+		}
 
 		&::after {
 			display: block;
@@ -92,6 +115,11 @@
 			border-radius: 50% 50%;
 			z-index: 2;
 
+			@include respond-to(mobile) {
+				height: 8vw;
+				width: 8vw;
+			}
+
 			&:hover {
 				background: $brown01 url(../images/arrow_next_accent.png) -160% 56% no-repeat;
 				z-index: 3;
@@ -101,12 +129,20 @@
 
 	&_item {
 		margin: 40px 25px 0px;
+		@include respond-to(mobile) {
+			margin: 9vw 5vw 0;
+		}
+
 	}
 
 	&_image {
 		height: 90px;
 		width: 90px;
 		margin: 0 auto;
+		@include respond-to(mobile) {
+			height: 16vw;
+			width: 16vw;
+		}
 	}
 
 	&_img {
@@ -118,6 +154,10 @@
 		margin-top: 10px;
 
 		@include font(500, 2.338rem, 1.8rem);
+		@include respond-to(mobile) {
+			margin-top: 1.5vw;
+			@include font(500, 5vw, 4.5vw);
+		}
 	}
 
 	&_article {
@@ -126,6 +166,11 @@
 		color: $black_02;
 
 		@include font(300, 2.5rem, 1.5rem);
+		@include respond-to(mobile) {
+			margin-top: 4.3vw;
+			letter-spacing: 0.03rem;
+			@include font(300, 6.3vw, 3.5vw);
+		}
 	}
 
 	.testimonials_article {

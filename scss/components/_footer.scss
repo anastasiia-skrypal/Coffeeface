@@ -1,16 +1,30 @@
 .footer {
 
+	.logo {
+		@include respond-to(mobile) {
+			height: 20px;
+			width: 150px;
+			margin-left: 10px;
+
+			@include respond-to(mobile) {
+				height: 3vw;
+				width: 30vw;
+			}
+		}	
+	}
+
 	&_wrapper {
 		background-color: $black;
 		padding: 42px 60px 21px;
 		color: $white;
 		position: relative;
 		overflow: hidden;
+		z-index: 1;
 
 		@include font(400, 3.15rem, 1.25rem);
 		@include site_width;
 		@include respond-to(mobile) {
-			padding: 10px;
+			padding: 1vw;
 		}
 
 		&::before {
@@ -25,9 +39,13 @@
 			background: url(../images/buying01.png) left no-repeat;
 			background-size: 100% 100%;
 			opacity: 0.05;
+			z-index: -1;
 
 			@include respond-to(mobile) {
-				transform: translate(14%, -30%) rotate(330deg);
+				transform: translate(14%, -30%) rotate(17deg);
+				background-size: 130% 130%;
+				top: 18%;
+				left: -18%;
 			}
 		}
 	}
@@ -41,7 +59,7 @@
 			flex-direction: column;
 		}
 		@include respond-to(mobile) {
-			padding: 30px;
+			padding: 4vw;
 		}
 	}
 
@@ -54,8 +72,10 @@
 
 		@include respond-to(mobile) {
 			flex-wrap: nowrap;
-			height: 300px;
-			margin-top: 20px;
+			height: 40vw;
+			margin: 7vw 0 14vw;
+			font-size: 4vw;
+			width: 150%;
 		}
 	}
 
@@ -67,7 +87,8 @@
 			margin-left: 10px;
 		}
 		@include respond-to(mobile) {
-			margin: 10px 0 0 10px;
+			margin: 2vw 0;
+			width: 50%;
 		}
 
 		&:hover {
@@ -87,6 +108,8 @@
 
 		@include respond-to(mobile) {
 			justify-content: space-between;
+			padding: 4vw 2vw 7vw;
+			margin: 7vw 0 0 2vw;
 		}
 
 		&_span {
@@ -99,10 +122,11 @@
 			height: 22px;
 			width: 32px;
 			border-radius: 5% 5%;
+			z-index: 5;
 
 			@include respond-to(mobile) {
-				height: 40px;
-				width: 60px;
+				height: 6vw;
+				width: 8vw;
 			}
 
 			&:hover {
@@ -147,7 +171,8 @@
 		padding: 7px 0;
 
 		@include respond-to(mobile) {
-			font-size: 1.5rem;
+			font-size: 3vw;
+			padding: 4vw 2vw;
 		}
 	}
 }
@@ -160,10 +185,10 @@
 
 		@include respond-to(mobile) {
 			position: absolute;
-			top: 10px;
-			right: 20px;
-			width: 25%;
-			font-size: 30px;
+			top: 30px;
+			right: 25px;
+			width: 30%;
+			font-size: 32px;
 		}
 	}
 
@@ -174,12 +199,4 @@
 	&_span {
 		font-size: 0;
 	}
-}
-
-.logo {
-	@include respond-to(mobile) {
-		height: 20px;
-		width: 150px;
-		margin-left: 10px;
-	}	
 }

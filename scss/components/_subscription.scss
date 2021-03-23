@@ -9,7 +9,7 @@
 
 		@include site_width;
 		@include respond-to(mobile) {
-			padding: 10px;
+			padding: 10vw 2vw 34vw;
 		}
 
 		&::after {
@@ -25,7 +25,10 @@
 			z-index: -1;
 
 			@include respond-to(mobile) {
-				background-size: contain;
+				height: 110vw;
+				width: 110%;
+				background-size: 105% 105%;
+				background-position: 100% -110%;
 			}
 		}
 	}
@@ -34,7 +37,7 @@
 		width: 60%;
 
 		@include respond-to(mobile) {
-			padding: 20px 10px 600px;
+			padding: 3vw 2vw 78vw;
 			width: 100%;
 		}
 	}
@@ -42,15 +45,22 @@
 	&_title {
 		@include font(200, 3.75rem, 3.2rem);
 		@include respond-to(mobile) {
-			@include font(200, 5.5rem, 4rem);
-			padding: 0 35px;
+			@include font(200, 11vw, 8vw);
+			padding: 0 5vw;
 		}
 	}
 
 	&_article {
 		margin-top: 35px;
 		letter-spacing: -0.029rem;
+
 		@include font(300, 2.9rem, 1.8rem);
+		@include respond-to(mobile) {
+			margin-top: 4vw;
+			padding: 0 1vw;
+			letter-spacing: 0.029rem;
+			@include font(300, 7.3vw, 4.1vw);
+		}
 	}
 
 	&_form {
@@ -66,12 +76,13 @@
 		color: $black_02;
 
 		@include respond-to(tablet) {
-			height: 6.5vw;
+			height: 2.3vw;
 			width: 30vw;
 		}
 		@include respond-to(mobile) {
-			width: 80vw;
-			font-size: 1.7rem;
+			width: 88vw;
+			height: 14vw;
+			font-size: 4vw;
 		}
 	}	
 
@@ -88,9 +99,10 @@
 		}
 
 		@include respond-to(mobile) {
-			margin-top: 10px;
-			width: 80vw;
-			font-size: 1.7rem;
+			margin-top: 3vw;
+			width: 88vw;
+			height: 14vw;
+			font-size: 4vw;
 		}
 	}
 }

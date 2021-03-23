@@ -2,6 +2,9 @@
 	display: inline-block;
 	overflow: hidden;
 	width: 95px;
+	@include respond-to(mobile) {
+		width: 185px;
+	}
 }
 
 .rating-area:not(:checked) > input {
@@ -16,6 +19,13 @@
 	font-size: 19px;
 	line-height: 19px;
 	color: $pink_05;
+
+	@include respond-to(mobile) {
+		font-size: 30px;
+		width: 30px;
+		line-height: 25px;
+		margin-left: 5px;
+	}
 }
 
 .rating-area:not(:checked) > label:before {

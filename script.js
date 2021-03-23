@@ -1,28 +1,30 @@
 $(document).ready(function(){
   $(".clients .owl-carousel").owlCarousel({
   	items: 5,
+    loop: true,
     responsive:{
       0:{
           items:2.5,
-          nav:true
+          nav:false
       },
       785:{
           items:5,
-          nav:true
+          nav:false
       },
     },
   });
 
   $(".blog .owl-carousel").owlCarousel({
   	items: 3,
+    loop: true,
     responsive:{
       0:{
           items:1.2,
-          nav:true
+          nav:false
       },
       785:{
           items:3,
-          nav:true
+          nav:false
       },
     },
   });

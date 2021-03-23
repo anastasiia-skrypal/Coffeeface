@@ -8,6 +8,9 @@
 		@include respond-to(tablet) {
 			padding: 60px 30px 30px;
 		}
+		@include respond-to(mobile) {
+			padding: 20vw 6vw 4vw;
+		}
 	}
 	
 	&_title {
@@ -15,6 +18,10 @@
 		letter-spacing: -0.08rem;
 		
 		@include font(200, 2.1rem, 3.3rem);
+		@include respond-to(mobile) {
+			text-transform: lowercase;
+			@include font(200, 4vw, 8vw);
+		}
 	}
 
 	&_item {
@@ -24,7 +31,7 @@
 			margin: 40px 10px;	
 		}
 		@include respond-to(mobile) {
-			margin: 40px 10px 25px;	
+			margin: 8vw 1vw 4vw;	
 		}
 	}
 
@@ -41,8 +48,9 @@
 		@include font(300, 1.098rem, 1.1rem);
 		@include respond-to(mobile) {
 			display: block;
-			@include font(300, 2rem, 1.3rem);
-			padding: 0 70px;
+			letter-spacing: 0.02vw;
+			padding: 0 8vw 14vw;
+			@include font(300, 3.5vw, 3.5vw);
 		}
 	}
 
@@ -68,8 +76,12 @@
 		font-size: 1.15rem;
 
 		@include respond-to(mobile) {
-			font-size: 2.5rem;	
+			font-size: 4vw;	
 			color: $pink_05;
+		}
+
+		&:hover {
+			color: $brown01;
 		}
 	}
 
@@ -116,7 +128,4 @@
 			background-color: $white;
 		}
 	}
-
-
-
 }
