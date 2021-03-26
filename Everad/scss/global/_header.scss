@@ -1,0 +1,23 @@
+.header {
+	background-color: $blue01;
+	height: 100px;
+	padding: 10px;
+
+	&_inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		font-size: 40px;
+		@include site_width;
+	}
+}
+
+.order {
+	&_link {
+		display: inline-block;
+		color: $white01;
+		background-color: $orange01;
+		line-height: 90px;
+		padding: 0 20px;
+	}
+}

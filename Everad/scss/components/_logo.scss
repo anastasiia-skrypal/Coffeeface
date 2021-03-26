@@ -1,0 +1,11 @@
+.logo {
+
+	&_name {
+		color: $white01;
+		height: 60px;
+		background: url(../img/logo.webp) left no-repeat;
+		background-size: auto 100%;
+		padding-left: 90px;
+		line-height: 60px;
+	}
+}

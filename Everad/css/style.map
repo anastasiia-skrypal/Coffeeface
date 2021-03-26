@@ -1,0 +1,20 @@
+{
+	"version": 3,
+	"file": "../scss/style.css",
+	"sources": [
+		"../scss/style.scss",
+		"../scss/_var.scss",
+		"../scss/_header.scss",
+		"../scss/_footer.scss",
+		"../scss/_nav.scss"
+	],
+	"sourcesContent": [
+		"@import \"var.scss\";\n@import \"header.scss\";\n@import \"footer.scss\";\n@import \"nav.scss\";",
+		"",
+		".header {\n\twidth: 100px;\n}",
+		".footer {\n\tcolor: red;\n\tfont-size: 1px;\n}\n",
+		""
+	],
+	"mappings": ";AEAA,AAAA,OAAO,CAAC;EACP,KAAK,EAAE,KAAM;CACb;;;ACFD,AAAA,OAAO,CAAC;EACP,KAAK,EAAE,GAAI;EACX,SAAS,EAAE,GAAI;CACf",
+	"names": []
+}

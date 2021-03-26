@@ -1,0 +1,11 @@
+.banner {
+	background-color: $blue02;
+	color: $white01;
+	text-shadow: 0px 6px 14px $grey03;
+	padding: 75px 30px;
+	text-align: center;
+
+	.owl-carousel {
+		margin: 25px 10px;
+	}
+}

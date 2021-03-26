@@ -1,0 +1,58 @@
+  // $base-font-size: 16;
+//   font-size: rem(22);
+@function rem($px, $base: $base-font-size) {
+    @return ($px / $base) * 1rem;
+}
+
+
+@mixin respond-to($media) {
+    // from 0 to 767
+    @if $media == mobile {
+        @media screen and (min-width: $mobile) {
+            @content;
+        }
+    }
+    // from 768 to 1023
+    @if $media == tablet {
+        @media screen and (min-width: $tablet) {
+            @content;
+        }
+    }
+    // from 1024
+    @if $media == desktop {
+        @media screen and (min-width: $desktop) {
+            @content;
+        }
+    }
+}
+
+
+@mixin clearfix {
+    &::after {
+        clear: both;
+        content: '';
+        display: table;
+    }
+}
+
+
+@mixin align($vertical:top, $display: inline-block) {
+    display: $display;
+    vertical-align: $vertical;
+}
+
+
+@mixin site_width($width: $mobile) {
+    margin: 0 auto;
+    min-width: $mobile;
+    padding: 0 $global_mobile_padding;
+
+    @include respond-to(tablet) {
+        padding: 0 $global_tablet_padding;
+    }
+    
+    @include respond-to(desktop) {
+        padding: 0 $global_desktop_padding;
+    }
+}
+
